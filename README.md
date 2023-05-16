@@ -33,7 +33,7 @@ What suggestions do you have for next steps?
 
 #### Outline of project
 
-- [Link to notebook 1]()
+- [Link to notebook 1](https://github.com/parthoghosh24/fake_news_detection/blob/main/fake_new_detection.ipynb)
 
 
 ##### Contact and Further Information
