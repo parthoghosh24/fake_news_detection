@@ -11,7 +11,7 @@ Why should anyone care about this question?
 What are you trying to answer?
 
 #### Data Sources
-What data will you use to answer you question?
+We are sourcing the data from [kaggle](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset?resource=download)
 
 #### Methodology
 What methods are you using to answer the question?
