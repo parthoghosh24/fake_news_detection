@@ -45,8 +45,25 @@ We are sourcing the data from [kaggle](https://www.kaggle.com/datasets/clmentbis
 
 The data contains around 23k fake news and 21k true news with 0 non-null data. The original dataset contained features like title, text (actual article), subject and date.
 
+We additionally added another feature to our data set (which becomes the target feature) called class. We then initalized this feature with 0 (fake) or 1 (true) based on the text.
+
+Then, we merged the 2 datasets to create one single dataset to work upon.
+
 ### Methodology
-What methods are you using to answer the question?
+**Preprocessing:** Post cleanup of the data, we pre-processed it in following order:
+* Tokenization: Splitting of the text using TweetTokenizer.
+* Stop words: Stop words for stop words removal in english.
+* Punctuation: Made punctuation list for removal.
+* Stemmer: Used Porter stemmer to stem.
+* Lemmatizer: Used WordNetLemmatizer to lemmatize.
+
+**Modeling:** As mentioned in the above sections, this is a classification problem and thus we chose bunch of classification algorithms to train and compare performance. We decided to go ahead with RandomizedGridSearch for the purpose of cross-validation of each algorithm to figure out the best versions of those.
+
+For each classifcation algorithm, we followed the below steps:
+* Cross-validation using RandomizedGridSearch.
+* Used TF-IDF vectorizer for data standardization which was followed with the actual model implementation.
+* Generated Confusion matrix to checkout their peformance.
+
 
 ### Results
 We chose below classification algorithms to train our model and compare against each other:
@@ -59,9 +76,10 @@ We chose below classification algorithms to train our model and compare against 
 Passive Aggressive Classifer (PAC) seem to have perfomed the best with accuracy score of 99% compared to others with a decent average runtime of 450 sec.
 
 
-
 ### Next steps
-What suggestions do you have for next steps?
+* Deep anaylysis of the model in hand by using debugging and feature importance techniques to figure out which words has more weightage in determining news is fake or not.
+* Try out other techniques like Deep learning (especially, RNN and LSTM) and see how they perform against PAC.
+* As discussed in future R&D, consider other aspects too for training the dataset to increase the accuracy.
 
 ### Outline of project
 
