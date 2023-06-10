@@ -29,7 +29,7 @@ The runtime of the model to train and evaulate our dataset was 419 s which was p
 * As discussed in future R&D, consider other aspects too for training the dataset to increase the accuracy.
 
 ### Rationale
-Fake news by nature is very destructive and harmful and has many ill effects. A small example of it's ill impact can be found in this [article](https://www.marketwatch.com/press-release/the-impact-of-fake-news-on-the-economy-2023-06-08).
+Fake news by nature is very destructive, harmful and has many ill effects. A small example of it's ill impact can be found in this [article](https://www.marketwatch.com/press-release/the-impact-of-fake-news-on-the-economy-2023-06-08).
 
 As per the above article, University of Baltimore did a study in 2019 which revealed that fake news caused an economic damage worth $78 billion in one single year. And this was before the covid era.
 
